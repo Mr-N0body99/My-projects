@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+     #menu {
+       overflow: hidden;
+       width: 0;
+       transition: 0.75s;
+  
+     }
+  
+  .loading{
+      height: 150px;
+      display: flex;
+      position: relative;
+      width: 150px;
+      border-top: 2px dotted white ;
+     border-bottom: 4px dotted white;
+      border-right: 3px dotted white;
+   border-left: 3px dotted white;
+      border-radius:50%;
+ animation:animate1 8s linear infinite;
+    }
+    
+    @keyframes animate1 {
+      0%{
+        transform: rotate(0deg)
+      }
+      100%{
+        transform:rotate(360deg)
+      }
+    }
+    .pic{
+      height: 40px;
+
+    }
+    .before{
+      display: flex;
+      position: absolute;
+      top: 55px;
+      left: 55px;
+    }
+    .container1{
+      position: relative;
+      display: flex;
+      column-gap: 20px;
+    }
+    .main-container{
+      margin-top: 110px;
+      margin-left: 10px;
+      display: grid;
+      column-gap: 20px;
+      row-gap: 20px;
+      grid-template: column;
+      grid-template-columns: 1fr 1fr;
+    }
+    .comma{
+      font-size:100px;
+      color:white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+    .motivation{
+      font-size: 45px;
+      padding-left: 5px;
+      color:rgba(66, 68, 90, 0.8);
+      font-weight: lighter;
+      padding: 0px 0px 5px 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div class="header">
+    
+    <div class="left">
+      
+  <div>
+    <a href="#" class="slide" onclick=" openMenu();">
+      <img class="menu-png" src="menu.png" alt="menu-png">
+
+    </a>
+      </div>
+    
+     
+
+  <div id="menu" class="container">
+     
+    <div href="#" onclick="
+     closeMenu();
+     "> <img class="icon" src="back.png" alt=""> </div>
+     
+     
+     <div>
+   <div  class="items"><a href="home.html">Home</a></div>
+    
+     
+   <div class="items2"> 
+   <a href="gallery.html"> Work </a>
+     </div>
+     
+
+   <div  class="items3">
+     <a href="#"> Contact Us</a>
+   </div>
+   
+   <div class="items4"><a href="#">Reviews</a></div>
+   
+   <div class="items5">
+     <a href="#">Credits</a>
+     </div>
+   </div>
+      
+  </div>
+ 
+    
+    
+     
+    </div>
+    
+    
+    
+  <div class="middle">
+      <div class="head">BROWN STUDIO&#174;</div>
+
+      <div class="tooltip">Logo</div>
+  </div>
+    
+ <div class="right">
+  <div class="profile-container">
+      JB
+          <div class="tooltip">Profile</div>
+      </div>
+      
+    </div>
+  </div>
+
+ 
+  <div class="main-container">
+  <div class="container1">
+    <div class="loading">
+     </div>
+    
+    <div class="before">
+      <img class="pic" src="briefcase.png" alt="">
+    </div>
+  </div>
+    
+      <div class="container1">
+    <div class="loading">
+     </div>
+    
+    <div class="before">
+      <img class="pic" src="email.png" alt="">
+    </div>
+  </div>
+  
+    <div class="container1">
+      <div class="loading">
+      </div>
+  
+      <div class="before">
+        <img class="pic" src="telphone.png" alt="">
+      </div>
+      </div>
+
+  <div class="container1">
+    <div class="loading">
+    </div>
+
+    <div class="before">
+      <img class="pic" src="profile.png" alt="">
+    </div>
+</div>
+  </div>
+  
+  <p class="comma">"</p>
+  <div>
+    <span class="motivation">The height that great men reach and kept were not attained by sudden flight .But they when their companion slept were toiling upwards in the night</span>.
+
+
+  </div>
+<p class="comma">  "</p>
+  
+  
+  
+  <div class="address">
+    Asokore - address
+<br>
+    Alhaji Banda St
+    <br>
+    GZ - 97532 - 9321
+    <br>
+    Way 05, Avenue 12 ,
+    75 Eraser St
+    <br>
+    /JayBrown@gmail.com
+  </div>
+  <div class="policy">
+    <p class="terms">POLICY | TERMS & CONDITIONS |
+    IMPRINT | PRIVACY | 
+    <br>
+
+    © 2023</p>
+    </div>
+  </div>
+  
+  
+  <script>
+    
+    
+    function openMenu() {
+    document.getElementById("menu").style.width = "70%";
+    document.getElementById("main").style.marginLeft = "70%";
+  }
+ function closeMenu() {
+    document.getElementById("menu").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  function dropdown() {
+    document.getElementById('work').style.height = '500px'
+  }
+  </script>
+</body>
+
+</html>

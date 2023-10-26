@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+<link rel="stylesheet" href="styles.css">
+  <style>
+  body{
+    margin: 0;
+  }
+  .icon1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 30px;
+    font-size: 40px;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border:3px solid white;
+    border-radius: 50%;
+    background-color: rgba(221, 223, 247, 1);
+
+    }
+  
+  .gridpreview{
+      display: grid;
+      grid-template-columns:1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      padding-bottom: 25px;
+      background-color: black;
+      padding-top: 75px;
+      padding-left: 5px;
+      box-shadow:inset 2px 2px 4px white;
+      }
+    .collage {
+      display: flex;
+      flex-direction:row;
+      column-gap: 9px;
+    }
+
+    .lilimg1 {
+      width: 180px;
+      height: 200px;
+    }
+
+    .lilimg2 {
+      height: 220px;
+
+    }
+
+    .lilimg3 {
+      width: 160px;
+      height: 200px;
+
+    }
+
+    .lilimg4 {
+      width: 180px;
+    }
+
+    .lilimg4i {
+      height: 200px;
+      width: 160px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html"><img class="icon1" src="home.png" alt="">
+<div class="gridpreview">
+  
+  <div class="collage">
+    <div class="cole"> <img class="lilimg1" src="conny.jpg" alt=""></div>
+
+    <div class="col">
+      <img class="lilimg2" src="IMG-3.jpg" alt="IMG-3.jpg">
+    </div>
+
+  </div>
+  <div class="collage">
+    <div>
+      <img class="lilimg3" src="IMG-6.jpg" alt="">
+    </div>
+
+    <div>
+      <img class="lilimg1" src="beautiful.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="collage">
+    <div>
+      <img class="lilimg4" src="IMG4.jpg" alt="">
+    </div>
+    <div>
+      <img class="lilimg4i" src="IMG5.jpg" alt="">
+    </div>
+
+  </div>
+  
+</div>
+</body>
+
+</html>
